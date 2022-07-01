@@ -1,0 +1,42 @@
+/* Mobile */
+@media (max-width: 740px)
+{
+    #contact .my-info {  
+        width: 50vw;
+    }
+    #contact .avatar img {
+        width: 180px;
+        height: 180px;
+    }
+    #contact .navigation {
+        width: 90vw;
+        justify-content: space-between;
+    }
+    #contact .navigation .navigation-button {
+        width: 80px;
+    }
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1060px)
+{
+    #contact .my-info {  
+        width: 60vw;
+    }
+    #contact .avatar img {
+        width: 180px;
+        height: 180px;
+    }
+    #contact .navigation {
+        width: 70vw;
+        justify-content: space-between;
+    }
+
+    #contact .navigation .navigation-button {
+        width: 80px;
+    }
+}
+/* PC */
+@media (min-width: 1060px)
+{
+
+}

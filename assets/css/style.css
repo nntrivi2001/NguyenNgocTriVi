@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@400;500&display=swap');
+
+.dark-mode {
+    --Background: rgb(23, 23, 23);
+    --Header1: rgb(237, 237, 237);
+    --Header2: rgb(215, 215, 215);
+    --Header3: rgb(178, 178, 178);
+    --Header4: rgb(178, 178, 178);
+    
+}
+.light-mode {
+    --Background: rgb(248, 248, 248);
+    --Header1: rgb(35, 35, 35);
+    --Header2: rgb(55, 55, 55);
+    --Header3: rgb(75, 75, 75);
+    --Header4: rgb(100, 100, 100);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: K2D;
+}
+body {
+    background-color: var(--Background);
+    overflow: overlay;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root::-webkit-scrollbar{
+	width: 5px;
+    background-color: transparent;
+}
+:root::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+:root::-webkit-scrollbar-thumb{
+	background-color: gray;
+    border-radius: 12px;
+}
+:root::-webkit-scrollbar-corner {
+    display: none;
+}
+
+h1 {
+    color: (--Header1);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h2 {
+    color: (--Header2);
+    font-size: 24px;
+    line-height: 24px;
+    
+}
+
+h3 {
+    color: (--Header3);
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+/* Contact */
+#contact {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    padding: 28px;
+    border-bottom: 1px solid gray;
+    box-shadow: 0 0 8px 2px gray;
+    flex-wrap: wrap;
+}
+
+#contact .avatar img {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    border: 3px solid black;
+    box-shadow: 0 0 12px 1px gray;
+}
+#contact .avatar img:hover {
+    transform: scale(1.05);
+}
+
+#contact .my-info {  
+    padding-left: 5vw;
+    width: 45vw;
+}
+
+#contact .navigation {
+    margin-top: 20px;
+    width: 50vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#contact .navigation .navigation-button {
+    width: 120px;
+    height: 32px;
+    border-radius: 8px;
+    border: 1px solid black;
+    box-shadow: 0 0 5px 0 gray;
+    cursor: pointer;
+}
+
+#contact .navigation .navigation-button:hover {
+    background-color: white;
+    transform: translateY(-5px) scale(1.1);
+}
+
+#contact .navigation .navigation-button:active {
+    background-color: gray;
+    transform: scale(1.05);
+
+}
+/* End Contact */
